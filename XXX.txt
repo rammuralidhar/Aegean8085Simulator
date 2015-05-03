@@ -1,0 +1,12 @@
+lxi h,0000
+lxi b,0010
+mvi d,08
+loop2:
+mov a,m
+stax b
+inx h
+inx b
+dcr d
+jnz loop2
+hlt
+end
